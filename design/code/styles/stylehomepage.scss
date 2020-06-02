@@ -1,5 +1,90 @@
 /* Font */
+
+
 * {
   font-family: Roboto, "Open Sans";
   font-size: 16px;
+}
+
+@import 'color';
+
+body {
+  background-color: $color_background_home;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  width: 100%;
+  height: 3.5em;
+  display: flex;
+  background-color: $color_primary_home;
+}
+
+.headline {
+  font-size: 2em;
+}
+
+nav {
+  display: flex;
+  direction: column;
+}
+
+.navigation-elements, .menu-footer {
+  display: flex;
+  justify-content: space-between;
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+section {
+  width: 100%;
+}
+
+.project-list {
+  padding: 0px;
+  .card-list {
+    background-color: $color_primary_home;
+    padding: 8px 0px;
+    margin: 8px 0px;
+    list-style: none;
+    border: 1px solid $grey_border;
+    border-left: none;
+    border-right: none;
+    img {
+      display: block;
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+}
+
+footer {
+  width: 100%;
+  background-color: $color_footer_home;
+  border: 1px solid $grey_border;
+  border-left: none;
+  border-right: none;
+
+  .menu-footer {
+    width: 100%;
+    padding: 0;
+  }
+  .menu-footer li {
+    border: 1px solid $grey_border;
+    width: 25%;
+    .footer-div {
+      display: flex;
+      flex-direction: column;
+      span {
+        margin: auto;
+        color: $white;
+      }
+    }
+  }
 }
