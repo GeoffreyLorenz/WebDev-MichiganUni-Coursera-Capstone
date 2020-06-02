@@ -10,6 +10,7 @@
 
 body {
   background-color: $color_background_home;
+  color: #ffffff;
   width: 100%;
   margin: 0px;
   padding: 0px;
@@ -44,6 +45,7 @@ nav {
 
 section {
   width: 100%;
+
 }
 
 .project-list {
@@ -56,10 +58,13 @@ section {
     border: 1px solid $grey_border;
     border-left: none;
     border-right: none;
-    img {
-      display: block;
-      width: 50%;
-      margin: 0 auto;
+    .image-project {
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+    }
+    h1, ul, p {
+      opacity: 0.87;
     }
   }
 }

@@ -5,6 +5,7 @@
 
 body {
   background-color: #009688;
+  color: #ffffff;
   width: 100%;
   margin: 0px;
   padding: 0px; }
@@ -43,10 +44,12 @@ section {
     border: 1px solid #BDBDBD;
     border-left: none;
     border-right: none; }
-    .project-list .card-list img {
-      display: block;
-      width: 50%;
-      margin: 0 auto; }
+    .project-list .card-list .image-project {
+      border-radius: 50%;
+      width: 48px;
+      height: 48px; }
+    .project-list .card-list h1, .project-list .card-list ul, .project-list .card-list p {
+      opacity: 0.87; }
 
 footer {
   width: 100%;
