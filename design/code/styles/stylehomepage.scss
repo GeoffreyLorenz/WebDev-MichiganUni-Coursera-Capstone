@@ -17,9 +17,7 @@ body {
 }
 
 header {
-  width: 100%;
   height: 3.5em;
-  display: flex;
   background-color: $color_primary_home;
 }
 
@@ -27,32 +25,62 @@ header {
   font-size: 2em;
 }
 
-nav {
-  display: flex;
-  direction: column;
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: $color_primary_home;
+  overflow: hidden;
+  width: 100%;
 }
 
-.navigation-elements, .menu-footer {
-  display: flex;
-  justify-content: space-between;
-  li {
-    list-style: none;
-  }
-  a {
-    text-decoration: none;
-  }
+.page-title {
+  margin: auto;
+  width: 50%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: $white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: $color_footer_home;
+  color: $white;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: $color_primary_home;
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
 }
 
 section {
   width: 100%;
+}
 
+.hero {
+  h2 {
+    text-align: center;
+  }
 }
 
 .project-list {
   padding: 0px;
   .card-list {
     background-color: $color_primary_home;
-    padding: 8px 0px;
+    padding: 8px 16px;
     margin: 8px 0px;
     list-style: none;
     border: 1px solid $grey_border;
@@ -62,6 +90,9 @@ section {
       border-radius: 50%;
       width: 48px;
       height: 48px;
+    }
+    .see-more-icon {
+      float: right;
     }
     h1, ul, p {
       opacity: 0.87;
@@ -75,21 +106,53 @@ footer {
   border: 1px solid $grey_border;
   border-left: none;
   border-right: none;
-
-  .menu-footer {
-    width: 100%;
-    padding: 0;
-  }
-  .menu-footer li {
-    border: 1px solid $grey_border;
-    width: 25%;
-    .footer-div {
+  .nav-footer {
       display: flex;
-      flex-direction: column;
-      span {
-        margin: auto;
-        color: $white;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0;
+      a {
+        text-decoration: none;
+      }
+      li {
+      list-style: none;
+      border: 1px solid $grey_border;
+      width: 25%;
+      .footer-div {
+        display: flex;
+        flex-direction: column;
+        span {
+          margin: auto;
+          color: $white;
+        }
       }
     }
+  }
+}
+
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("h1"). Show the link that contains should open and close the topnav (.icon)
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) from W3Cx*/
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .nav-element {
+    border-bottom: 1px solid $grey_border;
+    font-size: 0.8em;
+    opacity: 1;
   }
 }

@@ -13,21 +13,20 @@
 
 <body>
   <header>
-    <nav>
-      <ul class="navigation-elements" id="nav-top">
-        <li>Home - Portfolio</li>
-        <li>Work Experience</li>
-        <li>Education</li>
-        <li>Hire Me</li>
-      </ul>
-      <h1 class="headline">Geoffrey Lorenz</h1>
+    <nav class="topnav" id="myTopnav">
+      <h1 class="page-title"><a href="home">Geoffrey Lorenz</a></h1>
+      <a class="nav-element" href="#home" class="active">Home</a>
+      <a href="#news" class="nav-element">News</a>
+      <a href="#contact" class="nav-element">Contact</a>
+      <a href="#about" class="nav-element">About</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="images/icons/menu-black-24dp.svg" class="hamburger-menu"></object>
+      </a>
     </nav>
   </header>
 
   <section class="hero">
-    <h2>Web Developer</h2>
-    <h2>VR Developer</h2>
-    <h2>Business Analyst</h2>
+    <h2>Still under construction come back later. Coded by hand: no Framework, no template. Will follow Material Design guidelines</h2>
     <!-- Slideshow container -->
   </section>
 
@@ -37,7 +36,7 @@
         <img class="image-project" src="images/card-images/work-in-progress.jpg" alt="screenshot of le Garage de Mareuil">
         <h1>Game in Decentraland</h1>
         <p>I already have the assets, I just need to code it. Can't tell more for now.</p>
-        <img class="see-more-icon" src="expand_more-24px.svg" alt="Click to see more">
+        <img class="see-more-icon" src="/images/icons/expand_more-24px.svg" alt="Click to see more">
         <ul>
           <li>multiplayer</li>
           <li>free vs bet mode</li>
@@ -49,7 +48,7 @@
         <img class="image-project" src="images/card-images/work-in-progress.jpg" alt="screenshot of le Garage de Mareuil">
         <h1>Le Garage de Mareuil</h1>
         <p>Business project for my brother. I will create a website for his garage.</p>
-        <img class="see-more-icon" src="expand_more-24px.svg" alt="Click to see more">
+        <img class="see-more-icon" src="/images/icons/expand_more-24px.svg" alt="Click to see more">
         <ul>
           <li>a Wordpress website, that he can easily update content</li>
           <li>responsive design</li>
@@ -61,7 +60,7 @@
         <img class="image-project" src="images/card-images/festival-des-films-de-plein-air.jpg" alt="screenshot of Festival des Films de Plein Air">
         <h1>Festival des Films de Plein Air</h1>
         <p>This project was part of the 3rd project from Openclassroom</p>
-        <img class="see-more-icon" src="expand_more-24px.svg" alt="Click to see more">
+        <img class="see-more-icon" src="/images/icons/expand_more-24px.svg" alt="Click to see more">
         <ul>
           <li>I need to find back the requirements</li>
         </ul>
@@ -71,7 +70,7 @@
         <img class="image-project" src="images/card-images/holy-battle.jpg" alt="screenshot of holy battle">
         <h1>Zombie Apocalypse in Decentraland</h1>
         <p>This project was part of the Decentraland's VR Academy course to learn how to code scenes for the metaverse.</p>
-        <img class="see-more-icon" src="expand_more-24px.svg" alt="Click to see more">
+        <img class="see-more-icon" src="/images/icons/expand_more-24px.svg" alt="Click to see more">
         <ul>
           <li>use time and events to trigger animation and sounds</li>
           <li>create transparent element with Blender</li>
@@ -83,7 +82,7 @@
         <img class="image-project" src="images/card-images/fitactive.jpg" alt="screenshot of FitActive">
         <h1>FitActive</h1>
         <p>This project was part of the Openclassroom course to learn how to create website with Wordpress.</p>
-        <img class="see-more-icon" src="expand_more-24px.svg" alt="Click to see more">
+        <img class="see-more-icon" src="/images/icons/expand_more-24px.svg" alt="Click to see more">
         <ul>
           <li>header with a logo, phone number, a button "free trial" and a navbar</li>
           <li>home page with a "hero", different sections presenting the sports, coaches, testimonies, fees and information</li>
@@ -95,7 +94,7 @@
 
   <footer>
     <nav class="footer-nav">
-      <ul class="menu-footer">
+      <ul class="nav-footer">
         <li>
           <a href="#nav-top">
             <div class="footer-div active" id="home">
@@ -106,7 +105,7 @@
         </li>
 
         <li>
-          <a href="">
+          <a href="work-experience.html">
             <div class="footer-div" id="work">
               <img src="images/icons/work-white-48dp.svg" alt="work icon">
               <span>Work</span>
@@ -115,7 +114,7 @@
         </li>
 
         <li>
-          <a href="">
+          <a href="education.html">
             <div class="footer-div" id="education">
                 <img src="images/icons/menu_book-white-48dp.svg" alt="education icon">
                 <span>Education</span>
@@ -124,9 +123,9 @@
         </li>
 
         <li>
-          <a href="link-to-contact">
+          <a href="hire-me.html">
             <div class="footer-div" id="contact">
-              <img src="images/icons/email-white-48dp.svg" alt="contact-icon">
+              <img src="images/icons/email-white-48dp.svg" alt="contact icon">
               <span>Contact</span>
             </div>
           </a>
@@ -134,5 +133,15 @@
       </ul>
     </nav>
   </footer>
+  <script>/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}</script>
 </body>
+
 </html>
