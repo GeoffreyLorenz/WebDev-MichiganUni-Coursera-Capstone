@@ -4,6 +4,9 @@
   font-size: 16px; }
 
 body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   background-color: #009688;
   color: #ffffff;
   width: 100%;
@@ -11,31 +14,27 @@ body {
   padding: 0px; }
 
 header {
+  width: 100%;
   height: 3.5em;
   background-color: #005F69; }
-
-.headline {
-  font-size: 2em; }
 
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #005F69;
   overflow: hidden;
-  width: 100%; }
-
-.page-title {
-  margin: auto;
-  width: 50%; }
-
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  display: block;
-  color: #ffffff;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px; }
+  width: 100%;
+  /* Style the links inside the navigation bar */ }
+  .topnav .page-title {
+    margin: 0 auto;
+    width: 50%; }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px; }
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -54,27 +53,47 @@ header {
 section {
   width: 100%; }
 
-.hero h2 {
-  text-align: center; }
+.hero {
+  width: 100%; }
+  .hero h2 {
+    margin: 16px auto;
+    width: 50%; }
 
 .project-list {
-  padding: 0px; }
+  width: 100%;
+  padding: 0px;
+  vertical-align: center; }
   .project-list .card-list {
+    width: 100%;
     background-color: #005F69;
-    padding: 8px 16px;
+    padding: 8px 0px;
     margin: 8px 0px;
     list-style: none;
     border: 1px solid #BDBDBD;
     border-left: none;
     border-right: none; }
     .project-list .card-list .image-project {
+      display: inline-block;
       border-radius: 50%;
       width: 48px;
-      height: 48px; }
+      height: 48px;
+      padding: 0px 0px; }
+    .project-list .card-list .card-title {
+      display: inline-block;
+      width: 100%;
+      padding: 16px 0px; }
     .project-list .card-list .see-more-icon {
-      float: right; }
+      max-width: 24px;
+      display: inline-block; }
     .project-list .card-list h1, .project-list .card-list ul, .project-list .card-list p {
       opacity: 0.87; }
+
+.card-text {
+  display: none;
+  width: 80%; }
+
+.visible {
+  display: block; }
 
 footer {
   width: 100%;
