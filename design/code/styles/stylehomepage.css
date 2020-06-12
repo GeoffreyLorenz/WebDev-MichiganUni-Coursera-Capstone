@@ -74,43 +74,49 @@ section {
     border-right: none; }
     .project-list .card-list .image-project {
       display: inline-block;
+      vertical-align: middle;
       border-radius: 50%;
       width: 48px;
       height: 48px;
-      padding: 0px 0px; }
+      margin: 0px 16px; }
     .project-list .card-list .card-title {
       display: inline-block;
-      width: 100%;
-      padding: 16px 0px; }
+      vertical-align: middle;
+      min-width: 160px;
+      max-width: 95%;
+      font-size: 16px; }
     .project-list .card-list .see-more-icon {
-      max-width: 24px;
-      display: inline-block; }
+      display: inline-block;
+      float: right;
+      margin: 12px 16px; }
     .project-list .card-list h1, .project-list .card-list ul, .project-list .card-list p {
       opacity: 0.87; }
 
 .card-text {
   display: none;
-  width: 80%; }
+  min-width: 160px;
+  max-width: 95%;
+  margin: 0px 32px 0px 72px; }
+  .card-text p, .card-text li {
+    font-size: 12px; }
 
 .visible {
-  display: block; }
+  display: inline-block; }
 
 footer {
-  width: 100%;
-  background-color: #00454A;
-  border: 1px solid #BDBDBD;
-  border-left: none;
-  border-right: none; }
+  width: 100%; }
   footer .nav-footer {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 0; }
+    padding: 0;
+    margin: 0; }
     footer .nav-footer a {
       text-decoration: none; }
     footer .nav-footer li {
       list-style: none;
       border: 1px solid #BDBDBD;
+      background-color: #00454A;
       width: 25%; }
       footer .nav-footer li .footer-div {
         display: flex;
