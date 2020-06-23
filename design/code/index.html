@@ -26,8 +26,36 @@
   </header>
 
   <section class="hero">
-    <h2>Still under construction come back later. Coded by hand: no Framework, no template. Will follow Material Design guidelines</h2>
-    <!-- Slideshow container -->
+    <!-- Slideshow container from : https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+    <div class="slideshow-container fade">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img class="caroussel-image" src="images/hero/customer-service.jpg">
+        <h2 class="carousel-title">Workforce Planning Analyst</h2>
+      </div>
+
+      <div class="mySlides fade">
+        <img class="caroussel-image" src="images/hero/web-developer.jpg">
+        <h2 class="carousel-title">Web Developer</h2>
+      </div>
+
+      <div class="mySlides fade">
+        <img class="caroussel-image" src="images/hero/vr-developer.jpg">
+        <h2 class="carousel-title">VR Developer</h2>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div class="div-dot">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
   </section>
 
   <section class="section-list">
@@ -163,6 +191,35 @@ Array.from(document.querySelectorAll('.see-more-icon'), function (elem) {
 });
 
 </script>
+
+<script>var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}</script>
 
 </body>
 
