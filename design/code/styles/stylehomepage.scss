@@ -226,6 +226,8 @@ section {
 }
 
 footer {
+  position: sticky;
+  bottom: 0;
   width: 100%;
   .nav-footer {
       display: flex;

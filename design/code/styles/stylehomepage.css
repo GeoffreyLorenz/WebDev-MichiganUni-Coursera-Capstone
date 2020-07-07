@@ -1,7 +1,8 @@
 /* Font */
 * {
   font-family: Roboto, "Open Sans";
-  font-size: 16px; }
+  font-size: 16px;
+}
 
 body {
   display: flex;
@@ -11,66 +12,80 @@ body {
   color: #ffffff;
   width: 100%;
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+}
 
 header {
   width: 100%;
   height: 3.5em;
-  background-color: #005F69; }
+  background-color: #005F69;
+}
 
 /* Add a black background color to the top navigation */
 .topnav {
   background-color: #005F69;
   overflow: hidden;
   width: 100%;
-  /* Style the links inside the navigation bar */ }
-  .topnav .page-title {
-    margin: 0 auto;
-    width: 50%; }
-  .topnav a {
-    float: left;
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px; }
+  /* Style the links inside the navigation bar */
+}
+.topnav .page-title {
+  margin: 0 auto;
+  width: 50%;
+}
+.topnav a {
+  float: left;
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
 
 /* Change the color of links on hover */
 .topnav a:hover {
   background-color: #00454A;
-  color: #ffffff; }
+  color: #ffffff;
+}
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
   background-color: #005F69;
-  color: white; }
+  color: white;
+}
 
 /* Hide the link that should open and close the topnav on small screens */
 .topnav .icon {
-  display: none; }
+  display: none;
+}
 
 section {
-  width: 100%; }
+  width: 100%;
+}
 
 .hero {
-  width: 100%; }
+  width: 100%;
+}
 
 /*Caroussel*/
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
   position: relative;
-  margin: auto; }
+  margin: auto;
+}
 
 /* Hide the images by default */
 .mySlides {
-  display: none; }
-  .mySlides .caroussel-image {
-    width: 100%; }
+  display: none;
+}
+.mySlides .caroussel-image {
+  width: 100%;
+}
 
 /* Next & previous buttons */
 .prev, .next {
@@ -85,16 +100,19 @@ section {
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
-  user-select: none; }
+  user-select: none;
+}
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px; }
+  border-radius: 3px 0 0 3px;
+}
 
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.8); }
+  background-color: rgba(0, 0, 0, 0.8);
+}
 
 /* Caption text */
 .carousel-title {
@@ -104,10 +122,12 @@ section {
   position: absolute;
   top: 8px;
   width: 100%;
-  text-align: center; }
+  text-align: center;
+}
 
 .div-dot {
-  text-align: center; }
+  text-align: center;
+}
 
 /* The dots/bullets/indicators */
 .dot {
@@ -119,122 +139,155 @@ section {
   border-radius: 50%;
   border: solid 1px #005F69;
   display: inline-block;
-  transition: background-color 0.6s ease; }
+  transition: background-color 0.6s ease;
+}
 
 .active, .dot:hover {
   background-color: #005F69;
-  border: solid 1px #ffffff; }
+  border: solid 1px #ffffff;
+}
 
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
   -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 1.5s; }
+  animation-duration: 1.5s;
+}
 
 @-webkit-keyframes fade {
   from {
-    opacity: .4; }
+    opacity: 0.4;
+  }
   to {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 @keyframes fade {
   from {
-    opacity: .4; }
+    opacity: 0.4;
+  }
   to {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 .project-list {
   width: 100%;
   padding: 0px;
-  vertical-align: center; }
-  .project-list .card-list {
-    width: 100%;
-    background-color: #005F69;
-    padding: 8px 0px;
-    margin: 8px 0px;
-    list-style: none;
-    border: 1px solid #BDBDBD;
-    border-left: none;
-    border-right: none; }
-    .project-list .card-list .image-project {
-      display: inline-block;
-      vertical-align: middle;
-      border-radius: 50%;
-      width: 48px;
-      height: 48px;
-      margin: 0px 16px; }
-    .project-list .card-list .card-title {
-      display: inline-block;
-      vertical-align: middle;
-      min-width: 160px;
-      max-width: 95%;
-      font-size: 16px; }
-    .project-list .card-list .see-more-icon {
-      display: inline-block;
-      float: right;
-      margin: 12px 16px;
-      cursor: pointer; }
-    .project-list .card-list h1, .project-list .card-list ul, .project-list .card-list p {
-      opacity: 0.87; }
+  vertical-align: center;
+}
+.project-list .card-list {
+  width: 100%;
+  background-color: #005F69;
+  padding: 8px 0px;
+  margin: 8px 0px;
+  list-style: none;
+  border: 1px solid #BDBDBD;
+  border-left: none;
+  border-right: none;
+}
+.project-list .card-list .image-project {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  margin: 0px 16px;
+}
+.project-list .card-list .card-title {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 160px;
+  max-width: 95%;
+  font-size: 16px;
+}
+.project-list .card-list .see-more-icon {
+  display: inline-block;
+  float: right;
+  margin: 12px 16px;
+  cursor: pointer;
+}
+.project-list .card-list h1, .project-list .card-list ul, .project-list .card-list p {
+  opacity: 0.87;
+}
 
 .card-text {
   display: none;
   min-width: 160px;
   max-width: 95%;
-  margin: 0px 32px 0px 72px; }
-  .card-text p, .card-text li {
-    font-size: 12px; }
+  margin: 0px 32px 0px 72px;
+}
+.card-text p, .card-text li {
+  font-size: 12px;
+}
 
 .visible {
-  display: inline-block; }
+  display: inline-block;
+}
 
 footer {
-  width: 100%; }
-  footer .nav-footer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0;
-    margin: 0; }
-    footer .nav-footer a {
-      text-decoration: none; }
-    footer .nav-footer li {
-      list-style: none;
-      border: 1px solid #BDBDBD;
-      background-color: #00454A;
-      width: 25%; }
-      footer .nav-footer li .footer-div {
-        display: flex;
-        flex-direction: column; }
-        footer .nav-footer li .footer-div span {
-          margin: auto;
-          color: #ffffff; }
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+}
+footer .nav-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+footer .nav-footer a {
+  text-decoration: none;
+}
+footer .nav-footer li {
+  list-style: none;
+  border: 1px solid #BDBDBD;
+  background-color: #00454A;
+  width: 25%;
+}
+footer .nav-footer li .footer-div {
+  display: flex;
+  flex-direction: column;
+}
+footer .nav-footer li .footer-div span {
+  margin: auto;
+  color: #ffffff;
+}
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("h1"). Show the link that contains should open and close the topnav (.icon)
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) from W3Cx*/
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {
-    display: none; }
+    display: none;
+  }
 
   .topnav a.icon {
     float: right;
-    display: block; }
+    display: block;
+  }
 
   .topnav.responsive {
-    position: relative; }
+    position: relative;
+  }
 
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
-    top: 0; }
+    top: 0;
+  }
 
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: left; }
+    text-align: left;
+  }
 
   .topnav.responsive .nav-element {
     border-bottom: 1px solid #BDBDBD;
     font-size: 0.8em;
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 /*# sourceMappingURL=stylehomepage.css.map */
