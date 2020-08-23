@@ -27,6 +27,7 @@ header {
 
 /* Add a black background color to the top navigation */
 .topnav {
+  z-index: 9;
   background-color: $color_primary_home;
   overflow: hidden;
   width: 100%;
@@ -70,7 +71,7 @@ section {
 .hero {
   width: 100%;
   .mySlides.fade h2 {
-    text-shadow: 0px 2px 15px rgba(0, 0, 0, 1);
+  text-shadow: 0px 2px 15px rgba(0, 0, 0, 1);
   }
 }
 
@@ -151,10 +152,16 @@ section {
   border: solid 1px $color_primary_home;
   display: inline-block;
   transition: background-color 0.6s ease;
+
 }
 
-.active, .dot:hover {
+.active-dot {
   background-color: $color_primary_home;
+  border: solid 1px $white;
+}
+
+.dot:hover, .dot:active {
+  background-color: $color_background_home;
   border: solid 1px $white;
 }
 
@@ -269,7 +276,7 @@ footer {
 
 /* When the screen is less than 600 pixels wide, hide all links, except for the first one ("h1"). Show the link that contains should open and close the topnav (.icon)
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) from W3Cx*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 799px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -290,5 +297,66 @@ footer {
     border-bottom: 1px solid $grey_border;
     font-size: 0.8em;
     opacity: 1;
+    padding-top: 10px;
+  }
+}
+@media screen and (min-width: 600px) {
+  .project-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    .card-list {
+      width: 45%;
+      margin: 5px 5px;
+      border: 1px solid $grey_border;
+      .image-project {
+          display:block;
+          border-radius: 0px;
+          margin: 0 auto;
+          height: 248px;
+          width: 248px;
+      }
+      .card-title {
+        text-align: center;
+        width: 95%;
+      }
+      .see-more-icon {
+        display: none;
+      }
+      .card-text {
+        display: block;
+        margin-left: 32px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  h2.carousel-title {
+    font-size: 3em;
+  }
+  .project-list {
+    .card-list {
+      .image-project {
+        height: 350px;
+        width: 350px;
+      }
+      .card-title {
+      font-size: 1.5em;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .project-list {
+    .card-list {
+      width: 30%;
+      .image-project {
+        height: 250px;
+        width: 250px;
+      }
+    }
   }
 }
