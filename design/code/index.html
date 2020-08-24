@@ -59,11 +59,11 @@
   </section>
 
   <section class="section-list">
-    <ul class="project-list" id="projects-ul">
+    <ul class="list-container" id="projects-ul">
       <li class="card-list">
         <img class="image-project" src="images/card-images/work-in-progress.jpg" alt="screenshot of le Garage de Mareuil">
         <h1 class="card-title">Game in Decentraland</h1>
-        <img class="see-more-icon" src="images/icons/expand_more-24px.svg" alt="Click to see more">
+        <img class="see-more-icon" src="images/icons/expand_more-white-24px.svg" alt="Click to see more">
         <div class="card-text">
           <p>I already have the assets, I just need to code it. Can't tell more for now.</p>
           <ul>
@@ -77,7 +77,7 @@
       <li class="card-list">
         <img class="image-project" src="images/card-images/work-in-progress.jpg" alt="screenshot of le Garage de Mareuil">
         <h1 class="card-title">Le Garage de Mareuil</h1>
-        <img class="see-more-icon" src="images/icons/expand_more-24px.svg" alt="Click to see more">
+        <img class="see-more-icon" src="images/icons/expand_more-white-24px.svg" alt="Click to see more">
         <div class="card-text">
           <p>Business project for my brother. I will create a website for his garage.</p>
           <ul>
@@ -91,7 +91,7 @@
       <li class="card-list">
         <img class="image-project" src="images/card-images/work-in-progress.jpg" alt="screenshot of Festival des Films de Plein Air">
         <h1 class="card-title">Festival Plein Air</h1>
-        <img class="see-more-icon" src="images/icons/expand_more-24px.svg" alt="Click to see more">
+        <img class="see-more-icon" src="images/icons/expand_more-white-24px.svg" alt="Click to see more">
         <div class="card-text">
           <p>This project was part of the 3rd project from Openclassroom</p>
           <ul>
@@ -103,7 +103,7 @@
       <li class="card-list">
         <img class="image-project" src="images/card-images/work-in-progress.jpg" alt="screenshot of holy battle">
         <h1 class="card-title">Holy Battle</h1>
-        <img class="see-more-icon" src="images/icons/expand_more-24px.svg" alt="Click to see more">
+        <img class="see-more-icon" src="images/icons/expand_more-white-24px.svg" alt="Click to see more">
         <div class="card-text">
           <p>This project was part of the Decentraland's VR Academy course to learn how to code scenes for the metaverse.</p>
           <ul>
@@ -117,7 +117,7 @@
       <li class="card-list">
         <img class="image-project" src="images/card-images/fitactive.jpg" alt="screenshot of FitActive">
         <h1 class="card-title">FitActive</h1>
-        <img class="see-more-icon" src="images/icons/expand_more-24px.svg" alt="Click to see more">
+        <img class="see-more-icon" src="images/icons/expand_more-white-24px.svg" alt="Click to see more">
         <div class="card-text">
           <p>This project was part of the Openclassroom course to learn how to create website with Wordpress.</p>
           <ul>
@@ -172,56 +172,10 @@
     </nav>
   </footer>
 
-  <script>/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-</script>
+<script id="hamburger-menu-script" src="scripts/hamburger-menu.js" defer></script>
+<script id="carousel-script" src="scripts/carousel.js" defer></script>
+<script id="expand-card-script" src="scripts/expand-card.js" defer> </script>
 
-<script>
-
-Array.from(document.querySelectorAll('.see-more-icon'), function (elem) {
-    elem.addEventListener('click', function hideContent(e) {
-        e.currentTarget.parentNode.querySelector('.card-text')
-                       .classList.toggle('visible');
-    });
-});
-
-</script>
-
-<script>var slideIndex = 1;
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active-dot", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active-dot";
-}</script>
 
 </body>
 
