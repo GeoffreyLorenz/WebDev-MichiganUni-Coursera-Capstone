@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Geoffrey Lorenz's work experience </title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Geoffrey Lorenz's ">
+  <meta name="copyright" content="Geoffrey Lorenz">
+  <meta name="author" content="geoffrey, @GeoffreyLorenz">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="styles/stylehomepage.css">
+</head>
+
+<body>
+  <header>
+    <nav class="topnav" id="myTopnav">
+      <h1 id="home" class="page-title"><a href="#home">Geoffrey Lorenz</a></h1>
+      <a class="nav-element active" href="#home">Home</a>
+      <a href="work-experience.html" class="nav-element">Work Experience</a>
+      <a href="education.html" class="nav-element">Education</a>
+      <a href="hire-me.html" class="nav-element">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="images/icons/menu-white-24dp.svg" class="hamburger-menu">
+      </a>
+    </nav>
+  </header>
+  
+  <section class="hero">
+    <!-- Slideshow container from : https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+    <div class="slideshow-container fade">
+      <!-- Full-width images with number and caption text -->
+      <div class="mySlides fade">
+        <img class="caroussel-image" src="images/hero/customer-service.jpg">
+        <h2 class="carousel-title">Workforce Planning Analyst</h2>
+      </div>
+
+      <div class="mySlides fade">
+        <img class="caroussel-image" src="images/hero/web-developer.jpg">
+        <h2 class="carousel-title">Web Developer</h2>
+      </div>
+
+      <div class="mySlides fade">
+        <img class="caroussel-image" src="images/hero/vr-developer.jpg">
+        <h2 class="carousel-title">VR Developer</h2>
+      </div>
+
+      <!-- Next and previous buttons -->
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div class="div-dot">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+  </section>
+
+  <section class="section-list">
+    <ul class="list-container" id="projects-ul">
+      <li class="card-list">
+        <img class="image-project" src="images/card-images/work-in-progress.jpg" alt="screenshot of le Garage de Mareuil">
+        <h1 class="card-title">Game in Decentraland</h1>
+        <img class="see-more-icon" src="images/icons/expand_more-white-24px.svg" alt="Click to see more">
+        <div class="card-text">
+          <p>I already have the assets, I just need to code it. Can't tell more for now.</p>
+          <ul>
+            <li>multiplayer</li>
+            <li>free vs bet mode</li>
+            <li>less than 40 000 triangles</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="card-list">
+        <img class="image-project" src="images/card-images/work-in-progress.jpg" alt="screenshot of le Garage de Mareuil">
+        <h1 class="card-title">Le Garage de Mareuil</h1>
+        <img class="see-more-icon" src="images/icons/expand_more-white-24px.svg" alt="Click to see more">
+        <div class="card-text">
+          <p>Business project for my brother. I will create a website for his garage.</p>
+          <ul>
+            <li>a Wordpress website, that he can easily update content</li>
+            <li>responsive design</li>
+            <li>integration of a feedback system like eKomi</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="card-list">
+        <img class="image-project" src="images/card-images/work-in-progress.jpg" alt="screenshot of Festival des Films de Plein Air">
+        <h1 class="card-title">Festival Plein Air</h1>
+        <img class="see-more-icon" src="images/icons/expand_more-white-24px.svg" alt="Click to see more">
+        <div class="card-text">
+          <p>This project was part of the 3rd project from Openclassroom</p>
+          <ul>
+            <li>I need to find back the requirements</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="card-list">
+        <img class="image-project" src="images/card-images/work-in-progress.jpg" alt="screenshot of holy battle">
+        <h1 class="card-title">Holy Battle</h1>
+        <img class="see-more-icon" src="images/icons/expand_more-white-24px.svg" alt="Click to see more">
+        <div class="card-text">
+          <p>This project was part of the Decentraland's VR Academy course to learn how to code scenes for the metaverse.</p>
+          <ul>
+            <li>use time and events to trigger animation and sounds</li>
+            <li>create transparent elements with Blender</li>
+            <li>use Zeit Now to host the scene</li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="card-list">
+        <img class="image-project" src="images/card-images/fitactive.jpg" alt="screenshot of FitActive">
+        <h1 class="card-title">FitActive</h1>
+        <img class="see-more-icon" src="images/icons/expand_more-white-24px.svg" alt="Click to see more">
+        <div class="card-text">
+          <p>This project was part of the Openclassroom course to learn how to create website with Wordpress.</p>
+          <ul>
+            <li>header with a logo, phone number, a button "free trial" and a navbar</li>
+            <li>home page with a "hero", different sections presenting the sports, coaches, testimonies, fees and information</li>
+            <li>a news page with social network feed as a grid and filtering system</li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <nav class="footer-nav">
+      <ul class="nav-footer">
+        <li>
+          <a href="#home">
+            <div class="footer-div active-footer" id="home_footer">
+              <img src="images/icons/home-white-48dp.svg" alt="home">
+              <span>Home</span>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="work-experience.html">
+            <div class="footer-div" id="work">
+              <img src="images/icons/work-white-48dp.svg" alt="work icon">
+              <span>Work</span>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="education.html">
+            <div class="footer-div" id="education">
+                <img src="images/icons/menu_book-white-48dp.svg" alt="education icon">
+                <span>Education</span>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="hire-me.html">
+            <div class="footer-div" id="contact">
+              <img src="images/icons/email-white-48dp.svg" alt="contact icon">
+              <span>Contact</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+
+<script id="hamburger-menu-script" src="scripts/hamburger-menu.js" defer></script>
+<script id="carousel-script" src="scripts/carousel.js" defer></script>
+<script id="expand-card-script" src="scripts/expand-card.js" defer> </script>
+
+</body>
+
+</html>
