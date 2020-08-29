@@ -1,6 +1,13 @@
 @import 'color';
 
-
+@media screen and (min-width: 320px){
+  .list-container {
+    .card-list {
+      .card-title {
+      }
+    }
+  }
+}
 
 @media screen and (min-width: 600px) {
   .section-list {

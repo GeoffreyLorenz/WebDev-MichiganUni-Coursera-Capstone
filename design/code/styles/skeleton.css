@@ -119,6 +119,8 @@ section {
   padding: 0px;
   vertical-align: center; }
   .list-container .card-list {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     background-color: #005F69;
     padding: 8px 0px;
@@ -128,23 +130,20 @@ section {
     border-left: none;
     border-right: none; }
     .list-container .card-list .image-project {
-      display: inline-block;
       vertical-align: middle;
       border: 1px solid #ffffff;
       border-radius: 50%;
       width: 48px;
       height: 48px;
-      margin: 0px 16px; }
+      margin: auto 16px; }
     .list-container .card-list .card-title {
-      display: inline-block;
       vertical-align: middle;
       min-width: 160px;
       max-width: 95%;
-      font-size: 16px; }
+      font-size: 16px;
+      margin: auto auto auto 16px; }
     .list-container .card-list .see-more-icon {
-      display: inline-block;
-      float: right;
-      margin: 12px 16px;
+      margin: auto 16px;
       cursor: pointer;
       color: #ffffff; }
     .list-container .card-list h1, .list-container .card-list ul, .list-container .card-list p {
