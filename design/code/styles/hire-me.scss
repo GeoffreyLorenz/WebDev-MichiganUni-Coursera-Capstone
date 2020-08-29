@@ -1,0 +1,55 @@
+@import 'color','media-queries', 'skeleton', 'animation';
+
+body {
+  color: #212121;
+}
+
+::placeholder {
+  color: $black;
+  opacity: 0.38;
+}
+
+.list-container .card-list {
+  padding: 0px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  input, label {
+    margin: 16px 0px;
+  }
+  [type=submit],[type=reset] {
+    height: 48px;
+  }
+  label {
+    color: #303030;
+  }
+}
+
+body, .topnav a.nav-element.active, header, .hero .div-dot .dot:hover, .hero .div-dot .dot:active {
+  background-color: $color_background_contact;
+}
+
+.topnav, .list-container .card-list, .hero .slideshow-container .prev, .hero .slideshow-container .next, .hero .slideshow-container .prev:hover, .hero .slideshow-container .next:hover {
+  background-color: $color_primary_contact;
+}
+
+footer .nav-footer li, .topnav a:hover {
+  background-color: $color_footer_contact;
+}
+
+.hero {
+  text-align: center;
+  padding: 0px 16px;
+}
+
+.list-container .card-list .image-project {
+  border: 1px solid $black;
+}
+
+.image-project {
+  background-color: $white;
+}
+
+.topnav a, .topnav a.nav-element.active {
+  color: $black;
+}

@@ -1,0 +1,314 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-color: #009688;
+  color: #ffffff; }
+
+header {
+  width: 100%;
+  height: 3.5em;
+  background-color: #005F69; }
+
+/* Add a black background color to the top navigation */
+.topnav {
+  z-index: 9;
+  background-color: #005F69;
+  overflow: hidden;
+  width: 100%;
+  /* Style the links inside the navigation bar */
+  /* Hide the link that should open and close the topnav on small screens */ }
+  .topnav .page-title {
+    margin: 0 auto;
+    width: 50%; }
+  .topnav a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px; }
+  .topnav a:hover {
+    background-color: #00454A;
+    color: #ffffff; }
+  .topnav a.nav-element.active {
+    background-color: #009688;
+    color: #ffffff; }
+  .topnav .icon {
+    display: none; }
+
+section {
+  width: 100%; }
+
+/*Caroussel*/
+.hero {
+  width: 100%;
+  /* Slideshow container */ }
+  .hero .mySlides.fade h2 {
+    text-shadow: 0px 2px 15px black; }
+  .hero .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    /* Hide the images by default */
+    /* Next & previous buttons */
+    /* Position the "next button" to the right */
+    /* On hover, add a black background color with a little bit see-through */ }
+    .hero .slideshow-container .mySlides {
+      display: none;
+      /* Caption text */ }
+      .hero .slideshow-container .mySlides .caroussel-image {
+        width: 100%; }
+      .hero .slideshow-container .mySlides .carousel-title {
+        color: #ffffff;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 8px;
+        width: 100%;
+        text-align: center; }
+    .hero .slideshow-container .prev, .hero .slideshow-container .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -22px;
+      padding: 16px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      text-shadow: 0px 2px 15px black;
+      background-color: #005F69; }
+    .hero .slideshow-container .next {
+      right: 0;
+      border-radius: 3px 0 0 3px; }
+    .hero .slideshow-container .prev:hover, .hero .slideshow-container .next:hover {
+      background-color: #005F69;
+      opacity: 0.7; }
+  .hero .div-dot {
+    text-align: center;
+    /* The dots/bullets/indicators */ }
+    .hero .div-dot .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      border: solid 1px #005F69;
+      display: inline-block;
+      transition: background-color 0.6s ease; }
+    .hero .div-dot .active-dot {
+      background-color: #005F69;
+      border: solid 1px #ffffff; }
+    .hero .div-dot .dot:hover, .hero .div-dot .dot:active {
+      background-color: #009688;
+      border: solid 1px #ffffff; }
+
+.list-container {
+  width: 100%;
+  padding: 0px;
+  vertical-align: center; }
+  .list-container .card-list {
+    width: 100%;
+    background-color: #005F69;
+    padding: 8px 0px;
+    margin: 8px 0px;
+    list-style: none;
+    border: 1px solid #BDBDBD;
+    border-left: none;
+    border-right: none; }
+    .list-container .card-list .image-project {
+      display: inline-block;
+      vertical-align: middle;
+      border: 1px solid #ffffff;
+      border-radius: 50%;
+      width: 48px;
+      height: 48px;
+      margin: 0px 16px; }
+    .list-container .card-list .card-title {
+      display: inline-block;
+      vertical-align: middle;
+      min-width: 160px;
+      max-width: 95%;
+      font-size: 16px; }
+    .list-container .card-list .see-more-icon {
+      display: inline-block;
+      float: right;
+      margin: 12px 16px;
+      cursor: pointer;
+      color: #ffffff; }
+    .list-container .card-list h1, .list-container .card-list ul, .list-container .card-list p {
+      opacity: 0.87; }
+
+.card-text {
+  display: none;
+  min-width: 160px;
+  max-width: 95%;
+  margin: 0px 32px 0px 72px; }
+  .card-text p, .card-text li {
+    font-size: 12px; }
+
+.visible {
+  display: inline-block; }
+
+footer {
+  position: sticky;
+  bottom: 2px;
+  width: 100%; }
+  footer .nav-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0;
+    margin: 0; }
+    footer .nav-footer a {
+      text-decoration: none; }
+    footer .nav-footer li {
+      list-style: none;
+      border: 1px solid #BDBDBD;
+      background-color: #00454A;
+      width: 25%; }
+      footer .nav-footer li .footer-div {
+        display: flex;
+        flex-direction: column; }
+        footer .nav-footer li .footer-div span {
+          margin: auto;
+          color: #ffffff; }
+      footer .nav-footer li .footer-div:hover {
+        opacity: 0.5; }
+
+@media screen and (max-width: 799px) {
+  .topnav a:not(:first-child) {
+    display: none; }
+
+  .topnav a.icon {
+    float: right;
+    display: block; }
+
+  .topnav.responsive {
+    position: relative; }
+
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left; }
+
+  .topnav.responsive .nav-element {
+    border-bottom: 1px solid #BDBDBD;
+    font-size: 0.8em;
+    opacity: 1;
+    padding-top: 10px; } }
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s; }
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+@keyframes fade {
+  from {
+    opacity: .4; }
+  to {
+    opacity: 1; } }
+@media screen and (min-width: 600px) {
+  .section-list h2 {
+    margin-left: 160px; }
+
+  .list-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .list-container .card-list {
+      width: 45%;
+      margin: 5px 5px;
+      border: 1px solid #BDBDBD; }
+      .list-container .card-list .image-project {
+        display: block;
+        border-radius: 0px;
+        margin: 0 auto;
+        height: 248px;
+        width: 248px; }
+      .list-container .card-list .card-title {
+        text-align: center;
+        width: 95%; }
+      .list-container .card-list .see-more-icon {
+        display: none; }
+      .list-container .card-list .card-text {
+        display: block;
+        margin-left: 32px; } }
+@media screen and (min-width: 800px) {
+  .hero {
+    padding: 0px 24px; }
+
+  .carousel-title {
+    font-size: 3em; }
+
+  .list-container .card-list .image-project {
+    height: 350px;
+    width: 350px; }
+  .list-container .card-list .card-title {
+    font-size: 1.5em; } }
+@media screen and (min-width: 992px) {
+  .hero {
+    padding: 0px 72px; }
+
+  .list-container .card-list {
+    width: 30%; }
+    .list-container .card-list .image-project {
+      height: 250px;
+      width: 250px; } }
+body, .topnav a.nav-element.active, header, .hero .div-dot .dot:hover, .hero .div-dot .dot:active {
+  background-color: #212121; }
+
+.topnav, .list-container .card-list, .hero .slideshow-container .prev, .hero .slideshow-container .next, .hero .slideshow-container .prev:hover, .hero .slideshow-container .next:hover {
+  background-color: #424242; }
+
+footer .nav-footer li, .topnav a:hover {
+  background-color: #000000; }
+
+.hero .div-dot .dot.active-dot {
+  background-color: #424242;
+  border: solid 1px #ffffff; }
+
+.hero .div-dot .dot {
+  border-color: #424242; }
+
+.list-container .card-list .image-project {
+  border: 1px solid #000000; }
+
+.image-project {
+  background-color: white; }
+
+.hero .slideshow-container .mySlides {
+  padding: 0px 64px;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  border: 1px solid #ffffff; }
+  .hero .slideshow-container .mySlides .carousel-title {
+    position: static; }
+  .hero .slideshow-container .mySlides p {
+    line-height: 1.6; }
+
+/*# sourceMappingURL=work-experience.css.map */

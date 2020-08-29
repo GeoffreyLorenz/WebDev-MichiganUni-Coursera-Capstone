@@ -1,0 +1,30 @@
+@import 'color', 'skeleton', 'animation', 'media-queries';
+
+body, .topnav a.nav-element.active, header, .hero .div-dot .dot:hover, .hero .div-dot .dot:active {
+  background-color: $color_background_education;
+}
+
+.topnav, .list-container .card-list, .hero .slideshow-container .prev, .hero .slideshow-container .next, .hero .slideshow-container .prev:hover, .hero .slideshow-container .next:hover {
+  background-color: $color_primary_education;
+}
+
+footer .nav-footer li, .topnav a:hover {
+  background-color: $color_footer_education;
+}
+
+.hero .div-dot .dot.active-dot {
+    background-color: $color_primary_education;
+    border: solid 1px #ffffff;
+}
+
+.hero .div-dot .dot {
+  border-color: $color_primary_education;
+}
+
+.list-container .card-list .image-project {
+  border: 1px solid $black;
+}
+
+.image-project {
+  background-color: white;
+}

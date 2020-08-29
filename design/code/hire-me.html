@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Geoffrey Lorenz's portfolio - Web Development</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Geoffrey's Lorenz Portfolio. Web development and VR related projects ranging from Wordpress website to 3D creations in Decentraland">
+  <meta name="copyright" content="Geoffrey Lorenz">
+  <meta name="author" content="geoffrey, @GeoffreyLorenz">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="stylesheet" type="text/css" href="styles/hire-me.css">
+</head>
+
+<body>
+  <header>
+    <nav class="topnav" id="myTopnav">
+      <h1 id="home" class="page-title"><a href="index.html">Geoffrey Lorenz</a></h1>
+      <a href="index.html" class="nav-element">Home</a>
+      <a href="work-experience.html" class="nav-element active">Work Experience</a>
+      <a href="education.html" class="nav-element">Education</a>
+      <a href="hire-me.html" class="nav-element">Contact</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img src="images/icons/menu-black-24dp.svg" class="hamburger-menu">
+      </a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1 class="">Want to hire me?</h2>
+    <p>Answer to the few questions below if you wish to hire me. If you just want to offer me freelance jobs, please contact me on Anytask.com</p>
+  </section>
+
+  <section class="section-list">
+    <form class="list-container" id="degree-list">
+      <div class="card-list">
+        <label for="CompanyName">Company Name:</label><br>
+        <input type="text" id="CompanyName" name="Company Name" maxlength="30" placeholder="La Belle Vie" required>
+      </div>
+
+      <div class="card-list">
+        <label for="PositionName">Enter the URL of your website:</label><br>
+        <input type="url" id="UrlWebsite" name="URL website" placeholder="http://www.yourwebsite.com" pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$" required>
+        <p>Don't forget your extension at the end of your website .com / .fr, etc</p>
+      </div>
+
+      <div class="card-list">
+        <label for="PositionName">Name of the position you are willing to propose me:</label><br>
+        <input type="text" id="PositionName" name="Position" maxlength="30" placeholder="JavaScript Developer" required>
+      </div>
+
+      <div class="card-list">
+        <label for="MinimumSalary">Minimum yearly salary you can offer in €:</label><br>
+        <input type="number" id="MinimumSalary" name="Minimum Salary" min="0" placeholder="60000"required>
+      </div>
+
+      <div class="card-list">
+        <label for="EmployeeBenefits">Benefits you can offer?</label><br>
+        <select id="EmployeeBenefits" name="Employee Benefits" min="1" title="hold ctrl (or cmd if you are on mac) + click to select several options" multiple required>
+          <option value="espp">None</option>
+          <option value="espp">ESPP/Stock</option>
+          <option value="reducedHours">Reduced working hours</option>
+          <option value="dental">Dental</option>
+          <option value="glasses">Glasses</option>
+          <option value="Gym/Wellness">Gym / Welness</option>
+          <option value="retirementPlan">Retirement Plan</option>
+        </select>
+        <p>Hold CTRL (or CMD if on MAC) + left click on your mouse to select several options"</p>
+      </div>
+
+      <div class="card-list">
+        <label for="Email">Enter your email address that I can contact you back</label><br>
+        <input type="email" id="Email" name="Email" placeholder="example@domainname.com" title="Don't forget the @" required>
+      </div>
+
+      <div class="card-list">
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset the form">
+      </div>
+    </form>
+  </section>
+
+  <footer>
+    <nav class="footer-nav">
+      <ul class="nav-footer">
+        <li>
+          <a href="index.html">
+            <div class="footer-div active-footer" id="home_footer">
+              <img src="images/icons/home-white-48dp.svg" alt="home">
+              <span>Home</span>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="work-experience.html">
+            <div class="footer-div" id="work">
+              <img src="images/icons/work-white-48dp.svg" alt="work icon">
+              <span>Work</span>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="education.html">
+            <div class="footer-div" id="education">
+                <img src="images/icons/menu_book-white-48dp.svg" alt="education icon">
+                <span>Education</span>
+            </div>
+          </a>
+        </li>
+
+        <li>
+          <a href="hire-me.html">
+            <div class="footer-div" id="contact">
+              <img src="images/icons/email-white-48dp.svg" alt="contact icon">
+              <span>Contact</span>
+            </div>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+
+<script id="hamburger-menu-script" src="scripts/hamburger-menu.js" defer></script>
+
+
+</body>
+
+</html>

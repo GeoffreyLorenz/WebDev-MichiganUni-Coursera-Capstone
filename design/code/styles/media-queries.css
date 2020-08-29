@@ -1,4 +1,7 @@
 @media screen and (min-width: 600px) {
+  .section-list h2 {
+    margin-left: 160px; }
+
   .list-container {
     display: flex;
     flex-direction: row;
@@ -23,6 +26,9 @@
         display: block;
         margin-left: 32px; } }
 @media screen and (min-width: 800px) {
+  .hero {
+    padding: 0px 24px; }
+
   .carousel-title {
     font-size: 3em; }
 
@@ -32,6 +38,9 @@
   .list-container .card-list .card-title {
     font-size: 1.5em; } }
 @media screen and (min-width: 992px) {
+  .hero {
+    padding: 0px 72px; }
+
   .list-container .card-list {
     width: 30%; }
     .list-container .card-list .image-project {
