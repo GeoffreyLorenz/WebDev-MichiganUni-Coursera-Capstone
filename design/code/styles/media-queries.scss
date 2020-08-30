@@ -1,20 +1,11 @@
 @import 'color';
 
-@media screen and (min-width: 320px){
-  .list-container {
-    .card-list {
-      .card-title {
-      }
-    }
-  }
-}
-
 @media screen and (min-width: 600px) {
-  .section-list {
-    h2 {
-      margin-left: 160px;
-    }
+
+  .hero .slideshow-container .mySlides .carousel-title {
+    font-size: 1.5em;
   }
+
   .list-container {
     display: flex;
     flex-direction: row;
@@ -24,23 +15,32 @@
       width: 45%;
       margin: 5px 5px;
       border: 1px solid $grey_border;
-      .image-project {
-          display:block;
-          border-radius: 0px;
-          margin: 0 auto;
-          height: 248px;
-          width: 248px;
+      .card-header {
+        flex-direction: column;
+        .image-project {
+            border-radius: 0px;
+            margin: 0 auto;
+            height: 248px;
+            width: 248px;
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+        .card-title {
+          text-align: center;
+          width: 95%;
+          margin-top: 16px;
+          margin-bottom: 16px;
+        }
+        .see-more-icon {
+          display: none;
+        }
       }
-      .card-title {
-        text-align: center;
-        width: 95%;
-      }
-      .see-more-icon {
-        display: none;
-      }
-      .card-text {
-        display: block;
-        margin-left: 32px;
+        .card-text {
+          display: flex;
+          flex-direction: column;
+          margin-left: 32px;
+          margin-top: 16px;
+          margin-bottom: 16px;
       }
     }
   }
@@ -50,33 +50,47 @@
   .hero {
     padding: 0px 24px;
   }
-  .carousel-title {
+  .hero .slideshow-container .mySlides .carousel-title {
     font-size: 3em;
   }
   .list-container {
     .card-list {
-      .image-project {
-        height: 350px;
-        width: 350px;
-      }
-      .card-title {
-      font-size: 1.5em;
+      .card-header {
+        .image-project {
+          height: 350px;
+          width: 350px;
+        }
+        .card-title {
+        font-size: 1.5em;
+        }
       }
     }
   }
 }
 
 @media screen and (min-width: 992px) {
+
   .hero {
     padding: 0px 72px;
   }
+
   .list-container {
     .card-list {
       width: 30%;
-      .image-project {
-        height: 250px;
-        width: 250px;
+      .card-header {
+        .image-project {
+          height: 250px;
+          width: 250px;
+        }
       }
     }
+  }
+}
+
+
+@media screen and (min-width: 1440px) {
+
+  body {
+    padding: 0 72px;
   }
 }

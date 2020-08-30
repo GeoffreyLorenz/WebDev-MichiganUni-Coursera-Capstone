@@ -1,6 +1,6 @@
 @media screen and (min-width: 600px) {
-  .section-list h2 {
-    margin-left: 160px; }
+  .hero .slideshow-container .mySlides .carousel-title {
+    font-size: 1.5em; }
 
   .list-container {
     display: flex;
@@ -11,31 +11,39 @@
       width: 45%;
       margin: 5px 5px;
       border: 1px solid #BDBDBD; }
-      .list-container .card-list .image-project {
-        display: block;
-        border-radius: 0px;
-        margin: 0 auto;
-        height: 248px;
-        width: 248px; }
-      .list-container .card-list .card-title {
-        text-align: center;
-        width: 95%; }
-      .list-container .card-list .see-more-icon {
-        display: none; }
+      .list-container .card-list .card-header {
+        flex-direction: column; }
+        .list-container .card-list .card-header .image-project {
+          border-radius: 0px;
+          margin: 0 auto;
+          height: 248px;
+          width: 248px;
+          margin-top: 16px;
+          margin-bottom: 16px; }
+        .list-container .card-list .card-header .card-title {
+          text-align: center;
+          width: 95%;
+          margin-top: 16px;
+          margin-bottom: 16px; }
+        .list-container .card-list .card-header .see-more-icon {
+          display: none; }
       .list-container .card-list .card-text {
-        display: block;
-        margin-left: 32px; } }
+        display: flex;
+        flex-direction: column;
+        margin-left: 32px;
+        margin-top: 16px;
+        margin-bottom: 16px; } }
 @media screen and (min-width: 800px) {
   .hero {
     padding: 0px 24px; }
 
-  .carousel-title {
+  .hero .slideshow-container .mySlides .carousel-title {
     font-size: 3em; }
 
-  .list-container .card-list .image-project {
+  .list-container .card-list .card-header .image-project {
     height: 350px;
     width: 350px; }
-  .list-container .card-list .card-title {
+  .list-container .card-list .card-header .card-title {
     font-size: 1.5em; } }
 @media screen and (min-width: 992px) {
   .hero {
@@ -43,8 +51,11 @@
 
   .list-container .card-list {
     width: 30%; }
-    .list-container .card-list .image-project {
+    .list-container .card-list .card-header .image-project {
       height: 250px;
       width: 250px; } }
+@media screen and (min-width: 1440px) {
+  body {
+    padding: 0 72px; } }
 
 /*# sourceMappingURL=media-queries.css.map */

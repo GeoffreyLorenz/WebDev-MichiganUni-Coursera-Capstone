@@ -35,6 +35,7 @@ footer .nav-footer li, .topnav a:hover {
       padding: 0px 64px;
       display: flex;
       flex-direction: column;
+      justify-content: space-evenly;
       height: 300px;
       border: 1px solid $white;
       .carousel-title {

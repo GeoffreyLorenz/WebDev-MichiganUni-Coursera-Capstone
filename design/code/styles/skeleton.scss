@@ -55,6 +55,9 @@ header {
 
 section {
   width: 100%;
+  .section-title {
+    margin-left: 16px;
+  }
 }
 
 /*Caroussel*/
@@ -146,6 +149,7 @@ section {
   .card-list {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     width: 100%;
     background-color: $color_primary_home;
     padding: 8px 0px;
@@ -154,25 +158,29 @@ section {
     border: 1px solid $grey_border;
     border-left: none;
     border-right: none;
-      .image-project {
-        vertical-align: middle;
-        border: 1px solid $white;
-        border-radius: 50%;
-        width: 48px;
-        height: 48px;
-        margin: auto 16px;
+      .card-header {
+        display: flex;
+        justify-content: space-between;
+        .image-project {
+          vertical-align: middle;
+          border: 1px solid $white;
+          border-radius: 50%;
+          width: 48px;
+          height: 48px;
+          margin: auto 16px;
+          }
+        .card-title {
+          vertical-align: middle;
+          min-width: 160px;
+          max-width: 95%;
+          font-size: 16px;
+          margin: auto auto auto 16px;
         }
-      .card-title {
-        vertical-align: middle;
-        min-width: 160px;
-        max-width: 95%;
-        font-size: 16px;
-        margin: auto auto auto 16px;
-      }
-      .see-more-icon {
-        margin: auto 16px;
-        cursor: pointer;
-        color: $white;
+        .see-more-icon {
+          margin: auto 16px auto auto;
+          cursor: pointer;
+          color: $white;
+        }
       }
 
     h1, ul, p {
@@ -192,7 +200,7 @@ section {
 }
 
 .visible {
-  display: inline-block;
+  display: block;
 }
 
 footer {
