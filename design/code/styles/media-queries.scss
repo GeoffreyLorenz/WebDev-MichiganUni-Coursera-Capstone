@@ -1,9 +1,32 @@
 @import 'color';
 
+@media screen and (min-width: 450px) {
+
+  .list-container {
+    .card-list {
+      .card-header {
+        .image-project {
+        }
+        .card-title {
+          max-width: 60%;
+        }
+        .see-more-icon {
+        }
+      }
+        .card-text {
+      }
+    }
+  }
+  }
+
 @media screen and (min-width: 600px) {
 
   .hero .slideshow-container .mySlides .carousel-title {
     font-size: 1.5em;
+  }
+
+  section .section-title {
+    margin-left: 24px;
   }
 
   .list-container {
@@ -53,6 +76,11 @@
   .hero .slideshow-container .mySlides .carousel-title {
     font-size: 3em;
   }
+
+  section .section-title {
+    margin-left: 36px;
+  }
+
   .list-container {
     .card-list {
       .card-header {
@@ -74,6 +102,10 @@
     padding: 0px 72px;
   }
 
+  section .section-title {
+    margin-left: 72px;
+  }
+
   .list-container {
     .card-list {
       width: 30%;
@@ -82,11 +114,13 @@
           height: 250px;
           width: 250px;
         }
+        .card-text p, .card-text li {
+          font-size: 1.2em;
+        }
       }
     }
   }
 }
-
 
 @media screen and (min-width: 1440px) {
 

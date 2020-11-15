@@ -160,6 +160,7 @@ section {
     border-right: none;
       .card-header {
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-between;
         .image-project {
           vertical-align: middle;
@@ -172,7 +173,7 @@ section {
         .card-title {
           vertical-align: middle;
           min-width: 160px;
-          max-width: 95%;
+          max-width: 50%;
           font-size: 16px;
           margin: auto auto auto 16px;
         }
