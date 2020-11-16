@@ -174,7 +174,7 @@ section .section-title {
 .list-container .card-list .card-header .card-title {
   vertical-align: middle;
   min-width: 160px;
-  max-width: 95%;
+  max-width: 50%;
   font-size: 16px;
   margin: auto auto auto 16px;
 }
@@ -199,6 +199,11 @@ section .section-title {
 
 .visible {
   display: block;
+}
+
+.spin {
+  transform: rotate(180deg);
+  transition-duration: 1.5s;
 }
 
 footer {
@@ -289,6 +294,16 @@ footer .nav-footer li .footer-div:hover {
   }
   to {
     opacity: 1;
+  }
+}
+.spin {
+  transform: rotate(180deg);
+  transition-duration: 1.5s;
+}
+
+@media screen and (min-width: 450px) {
+  .list-container .card-list .card-header .card-title {
+    max-width: 60%;
   }
 }
 @media screen and (min-width: 600px) {

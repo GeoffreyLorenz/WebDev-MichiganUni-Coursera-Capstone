@@ -201,6 +201,11 @@ section .section-title {
   display: block;
 }
 
+.spin {
+  transform: rotate(180deg);
+  animation-duration: 3s;
+}
+
 footer {
   position: sticky;
   bottom: 2px;
