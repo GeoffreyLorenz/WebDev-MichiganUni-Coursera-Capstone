@@ -23,6 +23,12 @@ body {
   label {
     color: #303030;
   }
+  div {
+    input {
+      margin-left: 16px;
+      margin-right: 48px;
+    }
+  }
 }
 
 body, .topnav a.nav-element.active, header, .hero .div-dot .dot:hover, .hero .div-dot .dot:active {

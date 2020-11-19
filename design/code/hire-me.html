@@ -54,17 +54,35 @@
       </div>
 
       <div class="card-list">
-        <label for="EmployeeBenefits">Benefits you can offer?</label><br>
-        <select id="EmployeeBenefits" name="Employee Benefits" min="1" title="hold ctrl (or cmd if you are on mac) + click to select several options" multiple required>
-          <option value="espp">None</option>
-          <option value="espp">ESPP/Stock</option>
-          <option value="reducedHours">Reduced working hours</option>
-          <option value="dental">Dental</option>
-          <option value="glasses">Glasses</option>
-          <option value="Gym/Wellness">Gym / Welness</option>
-          <option value="retirementPlan">Retirement Plan</option>
-        </select>
-        <p>Hold CTRL (or CMD if on MAC) + left click on your mouse to select several options"</p>
+        <p>Benefits you can offer?</p>
+        <div>
+          <input class="benefit" type="checkbox" id="none" name="none" value="None">
+          <label class="benefit" for="none">None</label>
+        </div>
+        <div>
+          <input class="benefit" type="checkbox" id="espp" name="espp" value="ESPP">
+          <label class="benefit" for="none">ESPP/Stock</label>
+        </div>
+        <div>
+          <input class="benefit" type="checkbox" id="reducedHours" name="reducedHours" value="reducedHours">
+          <label class="benefit" for="reducedHours">Reduced working hours</label>
+        </div>
+        <div>
+          <input class="benefit" type="checkbox" id="dental" name="dental" value="Dental">
+          <label class="benefit" for="dental">Dental</label>
+        </div>
+        <div>
+          <input class="benefit" type="checkbox" id="vision" name="vision" value="Vision">
+          <label class="benefit" for="vision">Vision</label>
+        </div>
+        <div>
+          <input class="benefit" type="checkbox" id="wellness" name="wellness" value="Wellness">
+          <label class="benefit" for="Wellness">Wellness</label>
+        </div>
+        <div>
+          <input class="benefit" type="checkbox" id="pension" name="pension" value="Pension">
+          <label class="benefit" for="pension">Pension</label>
+        </div>
       </div>
 
       <div class="card-list">

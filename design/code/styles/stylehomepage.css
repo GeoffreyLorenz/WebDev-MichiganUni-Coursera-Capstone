@@ -201,11 +201,6 @@ section .section-title {
   display: block;
 }
 
-.spin {
-  transform: rotate(180deg);
-  transition-duration: 1.5s;
-}
-
 footer {
   position: sticky;
   bottom: 2px;
@@ -298,7 +293,7 @@ footer .nav-footer li .footer-div:hover {
 }
 .spin {
   transform: rotate(180deg);
-  transition-duration: 1.5s;
+  transition-duration: 0.5s;
 }
 
 @media screen and (min-width: 450px) {
