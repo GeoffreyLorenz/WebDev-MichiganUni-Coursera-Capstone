@@ -20,17 +20,18 @@
       <a href="education.html" class="nav-element">Education</a>
       <a href="hire-me.html" class="nav-element active">Contact</a>
       <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <img src="images/icons/menu-black-24dp.svg" class="hamburger-menu">
+        <img src="images/icons/menu-black-24dp.svg" class="hamburger-menu" alt="Hamburger menu icon">
       </a>
     </nav>
   </header>
 
   <section class="hero">
-    <h1 class="">Want to hire me?</h2>
+    <h1 class="page-title">Want to hire me?</h1>
     <p>Answer to the few questions below if you wish to hire me. If you just want to offer me freelance jobs, please contact me on Anytask.com</p>
   </section>
 
   <section class="section-list">
+    <h1 class="section-title">Formulaire de contact</h1>
     <form class="list-container" id="degree-list">
       <div class="card-list">
         <label for="CompanyName">Company Name:</label><br>
@@ -38,7 +39,7 @@
       </div>
 
       <div class="card-list">
-        <label for="PositionName">Enter the URL of your website:</label><br>
+        <label for="UrlWebsite">Enter the URL of your website:</label><br>
         <input type="url" id="UrlWebsite" name="URL website" placeholder="http://www.yourwebsite.com" pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$" required>
         <p>Don't forget your extension at the end of your website .com / .fr, etc</p>
       </div>
@@ -50,18 +51,18 @@
 
       <div class="card-list">
         <label for="MinimumSalary">Minimum yearly salary you can offer in €:</label><br>
-        <input type="number" id="MinimumSalary" name="Minimum Salary" min="0" placeholder="60000"required>
+        <input type="number" id="MinimumSalary" name="Minimum Salary" min="0" placeholder="60000" required>
       </div>
 
       <div class="card-list">
         <p>Benefits you can offer?</p>
         <div>
-          <input class="benefit" type="checkbox" id="none" name="none" value="None">
+          <input class="benefit" type="checkbox" id="none" name="none" value="none">
           <label class="benefit" for="none">None</label>
         </div>
         <div>
-          <input class="benefit" type="checkbox" id="espp" name="espp" value="ESPP">
-          <label class="benefit" for="none">ESPP/Stock</label>
+          <input class="benefit" type="checkbox" id="espp" name="espp" value="espp">
+          <label class="benefit" for="espp">ESPP/Stock</label>
         </div>
         <div>
           <input class="benefit" type="checkbox" id="reducedHours" name="reducedHours" value="reducedHours">
@@ -77,7 +78,7 @@
         </div>
         <div>
           <input class="benefit" type="checkbox" id="wellness" name="wellness" value="Wellness">
-          <label class="benefit" for="Wellness">Wellness</label>
+          <label class="benefit" for="wellness">Wellness</label>
         </div>
         <div>
           <input class="benefit" type="checkbox" id="pension" name="pension" value="Pension">
