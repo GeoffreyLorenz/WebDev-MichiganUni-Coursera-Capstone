@@ -201,11 +201,6 @@ section .section-title {
   display: block;
 }
 
-.spin {
-  transform: rotate(180deg);
-  animation-duration: 3s;
-}
-
 footer {
   position: sticky;
   bottom: 2px;
@@ -296,6 +291,11 @@ footer .nav-footer li .footer-div:hover {
     opacity: 1;
   }
 }
+.spin {
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+
 @media screen and (min-width: 450px) {
   .list-container .card-list .card-header .card-title {
     max-width: 60%;
