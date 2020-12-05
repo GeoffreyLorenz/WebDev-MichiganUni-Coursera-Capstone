@@ -69,7 +69,7 @@ section {
   }
   /* Slideshow container */
   .slideshow-container {
-    max-width: 1000px;
+    max-width: 1920px;
     position: relative;
     margin: auto;
     /* Hide the images by default */
@@ -77,6 +77,11 @@ section {
       display: none;
       .caroussel-image {
         width: 100%;
+        display: block;
+        img {
+          display: block;
+          width: 100%;
+        }
       }
       /* Caption text */
       .carousel-title {
@@ -89,6 +94,7 @@ section {
         text-align: center;
       }
     }
+
     /* Next & previous buttons */
     .prev, .next {
       cursor: pointer;
