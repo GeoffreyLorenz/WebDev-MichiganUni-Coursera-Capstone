@@ -68,7 +68,7 @@ section .section-title {
   text-shadow: 0px 2px 15px black;
 }
 .hero .slideshow-container {
-  max-width: 1000px;
+  max-width: 1920px;
   position: relative;
   margin: auto;
   /* Hide the images by default */
@@ -81,6 +81,11 @@ section .section-title {
   /* Caption text */
 }
 .hero .slideshow-container .mySlides .caroussel-image {
+  width: 100%;
+  display: block;
+}
+.hero .slideshow-container .mySlides .caroussel-image img {
+  display: block;
   width: 100%;
 }
 .hero .slideshow-container .mySlides .carousel-title {
@@ -337,6 +342,7 @@ footer .nav-footer li .footer-div:hover {
     width: 95%;
     margin-top: 16px;
     margin-bottom: 16px;
+    max-width: 100%;
   }
   .list-container .card-list .card-header .see-more-icon {
     display: none;

@@ -42,6 +42,8 @@
         .image-project {
             border-radius: 0px;
             margin: 0 auto;
+            height: 248px;
+            width: 248px;
             margin-top: 16px;
             margin-bottom: 16px;
         }
@@ -50,6 +52,7 @@
           width: 95%;
           margin-top: 16px;
           margin-bottom: 16px;
+          max-width: 100%;
         }
         .see-more-icon {
           display: none;
