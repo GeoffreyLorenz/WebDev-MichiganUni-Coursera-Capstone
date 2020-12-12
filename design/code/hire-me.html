@@ -32,67 +32,71 @@
 
   <section class="section-list">
     <h1 class="section-title">Formulaire de contact</h1>
-    <form class="list-container" id="degree-list">
+    <form class="list-container" id="formulaire">
       <div class="card-list">
         <label for="CompanyName">Company Name:</label><br>
-        <input type="text" id="CompanyName" name="Company Name" maxlength="30" placeholder="La Belle Vie" required>
+        <input class="to-validate" type="text" id="CompanyName" name="Company Name" maxlength="30" placeholder="La Belle Vie" required>
       </div>
 
       <div class="card-list">
         <label for="UrlWebsite">Enter the URL of your website:</label><br>
-        <input type="url" id="UrlWebsite" name="URL website" placeholder="http://www.yourwebsite.com" pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$" required>
+        <input class="to-validate" type="url" id="UrlWebsite" name="URL website" placeholder="http://www.yourwebsite.com" pattern="^(?:http(s)?:\/\/)?[\w.-]+(?:\.[\w\.-]+)+[\w\-\._~:/?#[\]@!\$&'\(\)\*\+,;=.]+$" value="http://www.EnterYourWebsite.EXTENSION"required>
         <p>Don't forget your extension at the end of your website .com / .fr, etc</p>
       </div>
 
       <div class="card-list">
         <label for="PositionName">Name of the position you are willing to propose me:</label><br>
-        <input type="text" id="PositionName" name="Position" maxlength="30" placeholder="JavaScript Developer" required>
+        <input class="to-validate" type="text" id="PositionName" name="Position" maxlength="30" placeholder="JavaScript Developer" required>
       </div>
 
       <div class="card-list">
         <label for="MinimumSalary">Minimum yearly salary you can offer in €:</label><br>
-        <input type="number" id="MinimumSalary" name="Minimum Salary" min="0" placeholder="60000" required>
+        <input class="to-validate" type="number" id="MinimumSalary" name="Minimum Salary" min="0" placeholder="60000" required>
       </div>
 
-      <div class="card-list">
+      <div class="card-list" id="benefit-container">
         <p>Benefits you can offer?</p>
         <div>
           <input class="benefit" type="checkbox" id="none" name="none" value="none">
-          <label class="benefit" for="none">None</label>
+          <label for="none">None</label>
         </div>
         <div>
           <input class="benefit" type="checkbox" id="espp" name="espp" value="espp">
-          <label class="benefit" for="espp">ESPP/Stock</label>
+          <label for="espp">ESPP/Stock</label>
         </div>
         <div>
           <input class="benefit" type="checkbox" id="reducedHours" name="reducedHours" value="reducedHours">
-          <label class="benefit" for="reducedHours">Reduced working hours</label>
+          <label for="reducedHours">Reduced working hours</label>
         </div>
         <div>
           <input class="benefit" type="checkbox" id="dental" name="dental" value="Dental">
-          <label class="benefit" for="dental">Dental</label>
+          <label for="dental">Dental</label>
         </div>
         <div>
           <input class="benefit" type="checkbox" id="vision" name="vision" value="Vision">
-          <label class="benefit" for="vision">Vision</label>
+          <label for="vision">Vision</label>
         </div>
         <div>
           <input class="benefit" type="checkbox" id="wellness" name="wellness" value="Wellness">
-          <label class="benefit" for="wellness">Wellness</label>
+          <label for="wellness">Wellness</label>
         </div>
         <div>
           <input class="benefit" type="checkbox" id="pension" name="pension" value="Pension">
-          <label class="benefit" for="pension">Pension</label>
+          <label for="pension">Pension</label>
+        </div>
+        <div>
+          <input class="benefit" type="checkbox" id="other" name="other" value="other">
+          <label for="other">Other</label>
         </div>
       </div>
 
       <div class="card-list">
         <label for="Email">Enter your email address that I can contact you back</label><br>
-        <input type="email" id="Email" name="Email" placeholder="example@domainname.com" title="Don't forget the @" required>
+        <input class="to-validate" type="email" id="Email" name="Email" placeholder="example@domainname.com" title="Don't forget the @" required>
       </div>
 
       <div class="card-list">
-        <input type="submit" value="Send">
+        <input type="submit" value="Send" onclick="valthis(); return false;">
         <input type="reset" value="Reset the form">
       </div>
     </form>
@@ -141,7 +145,7 @@
   </footer>
 
 <script id="hamburger-menu-script" src="scripts/hamburger-menu.js" defer></script>
-
+<script id="validation-script" src="scripts/validation.js" defer></script>
 
 </body>
 

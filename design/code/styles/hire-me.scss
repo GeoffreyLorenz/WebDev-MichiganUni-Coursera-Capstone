@@ -31,6 +31,19 @@ body {
   }
 }
 
+input.to-validate:focus {
+  background-color: grey;
+  color: $white;
+}
+
+input.to-validate:invalid {
+  background-color: pink;
+}
+
+input.to-validate:valid {
+  background-color: #98fb98;
+}
+
 body, .topnav a.nav-element.active, header, .hero .div-dot .dot:hover, .hero .div-dot .dot:active {
   background-color: $color_background_contact;
 }
